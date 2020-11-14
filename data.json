@@ -1,0 +1,6 @@
+{
+  "recipes": [
+    { "label": "banana shake", "ingredients": "bananas" },
+    { "label": "hot chocolate", "ingredients": "cocoa powder" }
+  ]
+}
