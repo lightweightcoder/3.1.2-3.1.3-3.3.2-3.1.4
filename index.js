@@ -1,5 +1,5 @@
 import express from 'express';
-
+import methodOverride from 'method-override';
 import { add } from './jsonFileStorage.js';
 
 const app = express();
@@ -11,6 +11,9 @@ app.set('view engine', 'ejs');
 
 // config to accept request form data
 app.use(express.urlencoded({ extended: false }));
+
+// override with POST having ?_method=PUT
+app.use(methodOverride('_method'));
 
 // app.post - accept form request
 // 1st param: the path that the post request is coming from
