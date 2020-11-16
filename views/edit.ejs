@@ -1,0 +1,23 @@
+<html>
+  <body>
+    <form method="POST" action="/recipe/<%= recipe.index %>?_method=PUT">
+      <!-- the below line is an alternative to ?_method="PUT" but will create an additional key: value pair (i.e _method: "PUT" ) -->
+      <!-- <input type="hidden" name="_method" value="PUT" /> -->
+      <label for="label">recipe label:</label><br />
+      <input
+        type="text"
+        id="label"
+        name="label"
+        value="<%= recipe.label %>"
+      /><br />
+      <label for="ingredients">ingredients:</label><br />
+      <input
+        type="text"
+        id="ingredients"
+        name="ingredients"
+        value="<%= recipe.ingredients %>"
+      /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

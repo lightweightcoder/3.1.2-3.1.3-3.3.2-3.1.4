@@ -78,7 +78,7 @@ export function write(filename, content, callback) {
       callback(null, error);
     } else {
       // file written successfully
-      console.log('success!');
+      console.log('write file success!');
       callback(outputContent, null);
     }
   });

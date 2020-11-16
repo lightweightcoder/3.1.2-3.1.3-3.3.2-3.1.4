@@ -1,7 +1,1 @@
-{
-  "recipes": [
-    { "label": "banana shake", "ingredients": "bananas" },
-    { "label": "hot chocolate", "ingredients": "cocoa powder" },
-    { "name": "milo dinosaur", "ingredients": "milo" }
-  ]
-}
+{"recipes":[{"label":"strawberry shake","ingredients":"strawberries"},{"label":"hot chocolate","ingredients":"cocoa powder"},{"name":"milo dinosaur","ingredients":"milo"}]}
