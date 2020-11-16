@@ -1,1 +1,7 @@
-{"recipes":[{"label":"banana shake","ingredients":"bananas"},{"label":"hot chocolate","ingredients":"cocoa powder"},{"name":"milo dinosaur","ingredients":"milo"}]}
+{
+  "recipes": [
+    { "label": "banana shake", "ingredients": "bananas" },
+    { "label": "hot chocolate", "ingredients": "cocoa powder" },
+    { "name": "milo dinosaur", "ingredients": "milo" }
+  ]
+}

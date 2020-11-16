@@ -13,6 +13,8 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: false }));
 
 // app.post - accept form request
+// 1st param: the path that the post request is coming from
+// 2nd param: callback to execute when post request is made
 app.post('/recipe', (request, response) => {
   console.log('request body', request.body);
 
