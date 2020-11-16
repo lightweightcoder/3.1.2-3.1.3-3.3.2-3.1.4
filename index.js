@@ -82,13 +82,32 @@ app.put('/recipe/:index', (request, response) => {
     data.recipes[index] = request.body;
 
     write('data.json', data, (doneData) => {
-      response.send('done!');
+      response.send('done editing!');
     });
   });
 });
 
 // end of functionality for user to edit a recipe by editing it in a form --------------
 // -------------------------------------------------------------------------------------
+
+// start of functionality for user to delete a recipe clicking on a button in the edit.ejs form ---
+
+// accept form request and delete the recipe in data.json
+app.delete('/recipe/:index', (request, response) => {
+  const { index } = request.params;
+
+  read('data.json', (data) => {
+    // take a thing out of the array
+    data.recipes.splice(index, 1);
+
+    write('data.json', data, (doneData) => {
+      response.send('recipe deleted!');
+    });
+  });
+});
+
+// end of functionality for user to delete a recipe clicking on a button in the edit.ejs form------
+// ------------------------------------------------------------------------------------------------
 
 // set the port to listen for requests
 app.listen(PORT);
